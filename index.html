@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Spending Survey</title>
+</head>
+<body>
+    <form action="/" method="POST">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select><br>
+
+        <label for="total_income">Total Income:</label>
+        <input type="number" id="total_income" name="total_income" required><br>
+
+        <h3>Expenses:</h3>
+        <label>Utilities:</label>
+        <input type="checkbox" name="utilities">
+        <input type="number" name="utilities_amount" placeholder="Amount"><br>
+
+        <label>Entertainment:</label>
+        <input type="checkbox" name="entertainment">
+        <input type="number" name="entertainment_amount" placeholder="Amount"><br>
+
+        <label>School Fees:</label>
+        <input type="checkbox" name="school_fees">
+        <input type="number" name="school_fees_amount" placeholder="Amount"><br>
+
+        <label>Shopping:</label>
+        <input type="checkbox" name="shopping">
+        <input type="number" name="shopping_amount" placeholder="Amount"><br>
+
+        <label>Healthcare:</label>
+        <input type="checkbox" name="healthcare">
+        <input type="number" name="healthcare_amount" placeholder="Amount"><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
